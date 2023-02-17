@@ -1,0 +1,11 @@
+<%- include('partials/header'); %>
+<h1><%= title %></h1>
+<table>
+    <% for(var i=0; i<students.length; i++) {%>
+        <tr>
+            <td><%= students[i].name %></td>
+            <td><%= students[i].major %></td>
+        </tr>
+    <% } %>
+</table>
+<%- include('partials/footer'); %>
