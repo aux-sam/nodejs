@@ -13,7 +13,7 @@ app.use(cookieParser());
 // Set cookie and send it to client
 app.get("/send", (req, res) => {
     res.cookie("logged_in", "true");
-    res.send("Cookie sent!");
+    res.send("Cookie sent!"); 
 });
 
 // DO NOT USE THIS METHOD

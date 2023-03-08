@@ -1,0 +1,26 @@
+<%- include('partials/header') %>
+    <div class="col-12 col-md-10 col-lg-8 col-xl-6 col-xxl-4 m-auto">
+        <div class="card">
+            <div class="card-body">
+                <% if (typeof error !== 'undefined') { %>
+                    <div class="alert alert-danger" role="alert">
+                       <%= error %>
+                    </div>
+                <% } %>
+                <h3 class="card-title text-center mb-4">Login in</h3>
+                <form action="/login" method="POST">
+                    <div class="mb-3">
+                        <label for="username" class="form-label">Username</label>
+                        <input type="text" name="username" class="form-control" id="username">
+                    </div>
+                    <div class="mb-3">
+                        <label for="password" class="form-label">Password</label>
+                        <input type="password" name="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-primary mt-3 text-center">Login</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+<%- include('partials/footer') %>
